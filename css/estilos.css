@@ -1,0 +1,290 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Body */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #0a1a14;
+  color: #e6efe9;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+}
+
+/* App */
+#app {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Login */
+.vista-login {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.login-caja {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #12291f;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.login-caja h1 {
+  color: #d4af37;
+  font-size: 22px;
+}
+
+.login-caja label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: #9fb8aa;
+}
+
+.login-caja input {
+  padding: 8px 10px;
+  background-color: #0a1a14;
+  color: #e6efe9;
+  border: 1px solid #1f4a38;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-caja button {
+  padding: 9px;
+  background-color: #d4af37;
+  color: #0a1a14;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-msg {
+  min-height: 20px;
+  font-size: 14px;
+  color: #ff8a8a;
+}
+
+/* Cabecera */
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 13px 24px;
+  background-color: #06110c;
+  border-bottom: 2px solid #d4af37;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: #d4af37;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #e6efe9;
+}
+
+.usuario button {
+  padding: 4px 12px;
+  background-color: #12291f;
+  color: #e6efe9;
+  border: 1px solid #1f4a38;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.usuario button:hover {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+/* Contenido */
+.contenido {
+  flex: 1;
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+.lista {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lista.cerrada {
+  display: none;
+}
+
+.central {
+  flex: 1;
+  min-width: 0;
+}
+
+.grupo {
+  margin-top: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #9fb8aa;
+}
+
+.item {
+  text-align: left;
+  background-color: #12291f;
+  color: #e6efe9;
+  border: 1px solid #1f4a38;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.item:hover {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+.item.activo {
+  border-color: #d4af37;
+  color: #d4af37;
+}
+
+/* Componente */
+.componente {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  background-color: #12291f;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+h2, h3 {
+  color: #d4af37;
+}
+
+/* Simbolo */
+.b-simbolo {
+  align-items: center;
+  text-align: center;
+}
+
+.simbolo {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  background-color: #0a1a14;
+  border: 1px dashed #1f4a38;
+  padding: 16px;
+}
+
+.etiqueta {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #0a1a14;
+  background-color: #d4af37;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Placa */
+.placa {
+  position: relative;
+  line-height: 0;
+}
+
+.placa img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.zona {
+  position: absolute;
+  border: 3px solid white;
+  background-color: rgba(212, 175, 55, 0.3);
+}
+
+/* Pie */
+.pie {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 24px;
+  background-color: #06110c;
+  border-top: 1px solid #1f4a38;
+  color: #9fb8aa;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 769px) {
+  .cabecera {
+    padding: 10px 16px;
+  }
+
+  .contenido {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .lista {
+    width: 100%;
+  }
+
+  .componente {
+    padding: 14px;
+  }
+
+  .pie {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

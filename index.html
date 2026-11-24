@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas de Componentes</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cabecera">
+    <button class="logo" title="Mostrar u ocultar la lista">
+      <img src="data/logos/logo.svg" alt="Logo temporal" width="36" height="36">
+      <span>Atlas de Componentes</span>
+    </button>
+  </header>
+
+  <main class="contenido">
+    <nav class="lista">
+      <p class="grupo">Pasivos</p>
+      <button class="item activo" data-componente="resistor">Resistor</button>
+      <button class="item" data-componente="capacitor">Capacitor</button>
+      <button class="item" data-componente="inductor">Inductor</button>
+      <p class="grupo">Semiconductores</p>
+      <button class="item" data-componente="diodo">Diodo</button>
+      <button class="item" data-componente="led">LED</button>
+      <button class="item" data-componente="bjt">Transistor BJT</button>
+      <button class="item" data-componente="mosfet">MOSFET</button>
+      <p class="grupo">Integrados</p>
+      <button class="item" data-componente="chip">Circuito integrado (chip)</button>
+    </nav>
+
+    <div id="central" class="central"></div>
+  </main>
+
+  <footer class="pie">
+    <p>Lorem ipsum dolor sit amet · contacto@lorem-ipsum.example · +598 000 000 00</p>
+    <p>© 2026 Lorem Ipsum</p>
+  </footer>
+
+  <script src="partes/resistor.js"></script>
+  <script src="partes/capacitor.js"></script>
+  <script src="partes/inductor.js"></script>
+  <script src="partes/diodo.js"></script>
+  <script src="partes/led.js"></script>
+  <script src="partes/bjt.js"></script>
+  <script src="partes/mosfet.js"></script>
+  <script src="partes/chip.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

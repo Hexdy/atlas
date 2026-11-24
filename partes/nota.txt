@@ -1,0 +1,1 @@
+tuve que usar js en vez de html por el coso del CORS ese, por eso los archivos son js con fragmentos html dentro como una forma de circumventar el problema.
